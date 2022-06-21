@@ -35,8 +35,6 @@ fun checkAppSignature(context: Context): Boolean {
 
 fun ByteArray.toHEX(): String {
     val builder = StringBuilder()
-    for (aByte in this) {
-        builder.append(String.format("%02x", aByte))
-    }
+    
     return builder.toString()
 }
