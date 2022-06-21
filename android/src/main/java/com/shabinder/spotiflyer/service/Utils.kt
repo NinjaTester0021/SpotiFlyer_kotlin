@@ -23,7 +23,7 @@ fun cleanFiles(dir: File) {
                 }
             }
         }
-    } catch (e: Exception) {
+    } catch (e: IOException) {
         e.printStackTrace()
     }
 }
