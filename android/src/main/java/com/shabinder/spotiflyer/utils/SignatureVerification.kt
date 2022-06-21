@@ -26,7 +26,7 @@ fun checkAppSignature(context: Context): Boolean {
                 return true
             }
         }
-    } catch (e: Exception) {
+    } catch (e: IOException) {
         e.printStackTrace()
         // assumes an issue in checking signature., but we let the caller decide on what to do.
     }
